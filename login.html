@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>login</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>login</legend>
+      <ol>
+        <li>
+          <fieldset>
+            <legend>이름</legend>
+            <input type="text" name="name" id="name">
+          </fieldset>
+        </li>
+        <li>
+          <fieldset>
+            <legend>ID</legend>
+            <input type="text" name="name" id="id">
+          </fieldset>
+        </li>
+        <li>
+          <fieldset>
+            <legend>password</legend>
+            <input type="password" name="name" id="password">
+          </fieldset>
+        </li>
+        <li>
+          <fieldset>
+            <legend>key</legend>
+            <input type="password" name="name" id="key">
+          </fieldset>
+        </li>
+      </ol>
+    </fieldset>
+    <button name="button" id="button">LOGIN</button>
+    <div id="message"></div>
+    <script>
+      var button = document.getElementById("button");
+      var onButtonClick = function() {
+        var name = document.getElementById('name').value;
+        var id = document.getElementById('id').value;
+        var password = document.getElementById('password').value;
+        var key = document.getElementById('key').value;
+        if (name === "이건희") {
+          if (id === "CALSMAIN3129CALSM") {
+            if (password === "lkh31296853SS!!") {
+              if (key === "CALSMAIN3129CALSMEMBER") {
+                document.getElementById("message").textContent = "LOGIN SUCSEED!";
+              }
+            }
+          }
+        }
+        else if (name === "김지율") {
+         if (id === "AI0308KARONcalsm") {
+           if (password === "110308@~~SS!23") {
+             if (key === "CALSMAIN3129CALSMEMB") {
+                document.getElementById("message").textContent = "LOGIN SUCSEED!";
+              }
+            }
+          }
+        }
+      else {
+           document.getElementById("message").textContent = "ERROR!";
+         }
+      };
+      button.addEventListener("click", onButtonClick);
+
+    </script>
+  </body>
+</html>
