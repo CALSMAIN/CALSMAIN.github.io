@@ -47,7 +47,7 @@
           if (id === "CALSMAIN3129CALSM") {
             if (password === "lkh31296853SS!!") {
               if (key === "CALSMAIN3129CALSMEMBER") {
-                document.getElementById("message").textContent = "LOGIN SUCSEED!";
+                form_submit_succeed();
               }
             }
           }
@@ -56,13 +56,13 @@
          if (id === "AI0308KARONcalsm") {
            if (password === "110308@~~SS!23") {
              if (key === "CALSMAIN3129CALSMEMB") {
-                document.getElementById("message").textContent = "LOGIN SUCSEED!";
+                form_submit_succeed();
               }
             }
           }
         }
       else {
-           document.getElementById("message").textContent = "ERROR!";
+           form_submit_error();
          }
       };
       button.addEventListener("click", onButtonClick);
