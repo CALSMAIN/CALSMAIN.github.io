@@ -36,8 +36,17 @@
     </fieldset>
     <button name="button" id="button">LOGIN</button>
     <div id="message"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
       var button = document.getElementById("button");
+      function form_submit_error() {
+        document.button.action="https://calsmain.github.io/login";
+        document.button.submit();
+      }
+        function form_submit_succeed() {
+          document.button.action="https://calsmain.github.io/calsinfo";
+          document.button.submit();
+        }
       var onButtonClick = function() {
         var name = document.getElementById('name').value;
         var id = document.getElementById('id').value;
